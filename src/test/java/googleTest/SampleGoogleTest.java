@@ -3,6 +3,7 @@ package googleTest;
 import java.io.File;
 import java.io.IOException;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SampleGoogleTest {
    
-	
+	@Test
 	public void validateBing() throws IOException{
 		  WebDriverManager.chromedriver().setup();
 		  WebDriver wd=new ChromeDriver();
